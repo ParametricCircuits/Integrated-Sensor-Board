@@ -1,6 +1,6 @@
 # Integrated-Sensor-Board
 ATmega328 + accelerometer + light sensor + temperature sensor + barometer + SPI flash + microSD + WS2812 + USB serial
-This is the github repo for the Integrated-Sensor-Board, which can be found at [tindie.com/products/parametriccircuits/customizable-integrated-sensor-board/](https://www.tindie.com/products/parametriccircuits/customizable-integrated-sensor-board/)
+This is the github repo for the Integrated Sensor Board, which can be found at [tindie.com/products/parametriccircuits/customizable-integrated-sensor-board/](https://www.tindie.com/products/parametriccircuits/customizable-integrated-sensor-board/)
 
 # Tested libraries
 
