@@ -34,5 +34,5 @@ float tempMCP = ((analogRead(A3)*5/1024.0)- 0.5 )/ 0.01;
 ```
 
 ## Ws2812 RGB Led
-[fastLED] (https://github.com/FastLED/FastLED) by fastled.io<br/>
+[fastLED](https://github.com/FastLED/FastLED) by fastled.io<br/>
 [Neopixel](https://github.com/adafruit/Adafruit_NeoPixel) library by Adafruit 
