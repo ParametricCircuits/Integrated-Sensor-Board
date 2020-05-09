@@ -1,5 +1,5 @@
 # Integrated-Sensor-Board
-###ATmega328 + accelerometer + light sensor + temperature sensor + barometer + SPI flash + microSD + WS2812 + USB serial
+ATmega328 + accelerometer + light sensor + temperature sensor + barometer + SPI flash + microSD + WS2812 + USB serial
 This is the github repo for the Integrated-Sensor-Board, which can be found at [tindie.com/products/parametriccircuits/customizable-integrated-sensor-board/](https://www.tindie.com/products/parametriccircuits/customizable-integrated-sensor-board/)
 
 # Tested libraries
@@ -15,7 +15,7 @@ Strictly speaking, this isn't a library, it's just example code that directly us
 However, it does provide code to read altitude, pressure, and temperature, and the code is quite simple and easily modified.
 [HP203B](https://github.com/ControlEverythingCommunity/HP203B) by ControlEverythingCommunity
 
-## MicroSD socket
+## MicroSD
 For simple use, Arduino's build in library works great. 
 For more advanced use, try the [SdFat](https://github.com/greiman/SdFat) library by Greiman
 
@@ -28,7 +28,10 @@ This can be as simple as calling `Serial.print(analogRead(A2));` repeatedly, and
 different light levels.
 
 ## Temperature sensor 
-
+As the conversion is so simple, a full library is overkill. This one liner works well to get degrees C:
+```
+float tempMCP = ((analogRead(A3)*5/1024.0)- 0.5 )/ 0.01;
+```
 
 ## Ws2812 RGB Led
 [fastLED] (https://github.com/FastLED/FastLED) by fastled.io
